@@ -3,28 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cool Font Example</title>
-    <!-- Link to the Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            background-color: #E6E6FA; /* Light purple background */
-            font-family: 'Poppins', sans-serif; /* Apply the cool font */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: #333;
-        }
-        h1 {
-            font-size: 3em;
-            font-weight: 700;
-        }
-    </style>
+    <title>My Website</title>
 </head>
 <body>
-    <h1>Check out this cool font!</h1>
+    <!-- Include the header -->
+    <div id="header"></div>
+    
+    <script>
+        // Load the header from header.html
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
 </body>
 </html>
