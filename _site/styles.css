@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0D1B2A;
+    color: white;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    overflow-y: scroll;
+    padding-top: 50px; /* Add padding to ensure the header is visible */
+}
+.container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #BADEFC;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    gap: 20px;
+}
+.text-section {
+    max-width: 350px;
+}
+.text-section h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid #B5446E;
+    width: 0;
+    animation: typing 3s steps(40, end) forwards, blink 0.75s step-end infinite;
+}
+.text-section span {
+    color: #B5446E;
+}
+.text-section p {
+    font-size: 1.1em;
+    margin: 20px 0;
+    line-height: 1.6em;
+    color: #0D1B2A;
+}
+.text-section a {
+    color: #B5446E;
+    text-decoration: none;
+}
+.social-icons {
+    display: flex;
+    margin-top: 20px;
+}
+.social-icons a {
+    margin-right: 10px;
+}
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+.image-section img {
+    width: 450px;
+    height: auto;
+    border-radius: 20px;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+
+/* Projects Section */
+.projects-section {
+    margin: 50px auto;
+    padding: 0 20px;
+    max-width: 900px;
+}
+
+.projects-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.projects-section h2 span {
+    color: #B5446E;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    background-color: #BADEFC;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.project-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.project-details {
+    flex: 1;
+}
+
+.project-details h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #0D1B2A;
+}
+
+.project-details .tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.project-details .tag {
+    background-color: #ff6363;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    color: #ffffff;
+}
+
+.project-details p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #0D1B2A;
+}
+
+/* Make the page scrollable */
+body {
+    overflow-y: scroll;
+}
+
+
+
